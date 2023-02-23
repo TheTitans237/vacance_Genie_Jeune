@@ -79,3 +79,10 @@ Route::get('/boxed-layout', function () {
 Route::get('/contact', function () {
     return view('kids/contact');
 });
+
+Auth::routes();
+Route::get('/auth', function () {
+    return view('auth.login');
+});
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
