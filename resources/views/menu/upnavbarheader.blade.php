@@ -40,7 +40,8 @@
 
 						<div class="menu-area">
 							<ul class="menu-search-cart">
-								<li><span class="menu-search"><i class="fa fa-search" aria-hidden="true"></i></span>
+								<li>
+                                    <span class="menu-search"><i class="fa fa-search" aria-hidden="true"></i></span>
 								</li>
 							</ul>
 
