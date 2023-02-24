@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use App\Models\User;
+use App\Models\Candidat;
 
 return new class extends Migration
 {
@@ -14,12 +14,18 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('candidats', function (Blueprint $table) {
             $table->id();
+            $table->string('nom');
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->string('niveau');
+            $table->string('ecole');
+            $table->integer('age');
+            $table->string('nom_tuteur');
+            $table->string('phone');
+            $table->string('ville');
+            $table->enum('sexe', ['homme', 'femme']);
+            $table->date('annee_edition');
             $table->timestamps();
         });
     }
@@ -31,6 +37,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('candidats');
     }
 };

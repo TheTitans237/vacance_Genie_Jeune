@@ -10,13 +10,12 @@
     */
 
 
-
 /*---------------------------------------------
 			Table of CONTENT
 -----------------------------------------------
 	01. Default CSS
-	02. Header 
-	03.	Banner 
+	02. Header
+	03.	Banner
 	04. Page Header
 	05. Facility
 	06. About
@@ -35,12 +34,16 @@
 	19. Subscribe
 	20. 404 Error
 	21. Footer
-	
+
 -----------------------------------------------*/
+
 
 /*	01	- Default CSS
 ----------------------------------------------*/
+
+
 /* --- 1.0 - Normalize ---*/
+
 html {
     font-family: 'Roboto', sans-serif;
     -webkit-text-size-adjust: 100%;
@@ -184,6 +187,17 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+
+/* Bouton responsive */
+
+.btn-responsive {
+    width: 100%;
+    max-width: 200px;
+    position: absolute;
+    padding-top: 10px;
+    margin: auto;
+}
+
 button[disabled],
 html input[disabled] {
     cursor: default;
@@ -244,7 +258,9 @@ optgroup {
     font-weight: bold;
 }
 
+
 /* --- 2.0 - Typography --- */
+
 body,
 button,
 input,
@@ -268,9 +284,7 @@ h6 {
     /* font-style: italic; */
     margin: 0;
     padding: 0;
-
-    font-family: 'Bubblegum Sans',
-        cursive;
+    font-family: 'Bubblegum Sans', cursive;
 }
 
 h1 {
@@ -434,14 +448,16 @@ big {
     font-size: 125%;
 }
 
+
 /* --- 3.0 - Elements --- */
+
 html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.header-top
-*,
+
+.header-top *,
 *:before,
 *:after {
     /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
@@ -542,7 +558,9 @@ td {
     padding: 0.4375em;
 }
 
+
 /* Placeholder text color -- selectors need to be separate to work. */
+
 ::-webkit-input-placeholder {
     color: #696969;
     font-family: 'Roboto', sans-serif;
@@ -565,7 +583,9 @@ td {
     font-family: 'Roboto', sans-serif;
 }
 
+
 /* --- 4.0 - Forms --- */
+
 input {
     line-height: normal;
 }
@@ -712,8 +732,10 @@ input[type="submit"][disabled]:focus {
     background-color: #bd081c;
 }
 
+
 /*  02  - Header
 ----------------------------------------------*/
+
 header .header-top {
     background-color: #037e1e;
     padding: 11px 0px;
@@ -723,7 +745,6 @@ header .header-top ul {
     overflow: hidden;
     margin: 0px;
 }
-
 
 header .header-top .left li {
     list-style: none;
@@ -738,7 +759,6 @@ header .header-top .left li span {
     color: #fff;
     margin-right: 5px;
 }
-
 
 header .header-top .right li {
     list-style: none;
@@ -790,7 +810,6 @@ header .main-menu .navbar {
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
     }
-
     to {
         opacity: 1;
         -webkit-transform: none;
@@ -804,7 +823,6 @@ header .main-menu .navbar {
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
     }
-
     to {
         opacity: 1;
         -webkit-transform: none;
@@ -1030,7 +1048,6 @@ header .main-menu .menu_cart>span:before {
     background-color: #92278f;
     border-radius: 100%;
     text-align: center;
-
 }
 
 header .main-menu .menu_cart .shop_feature {
@@ -1320,8 +1337,10 @@ header .main-menu .menu_cart .check_out {
     font-size: 24px;
 }
 
+
 /*  03  - Banner
 ----------------------------------------------*/
+
 .banner {
     position: relative;
 }
@@ -1557,7 +1576,6 @@ header .main-menu .menu_cart .check_out {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
-
 }
 
 .banner .banner-item.slide-three.swiper-slide-active .banner-content ul {
@@ -1627,8 +1645,10 @@ header .main-menu .menu_cart .check_out {
     background-image: url(../../images/banner/banner_12.jpg);
 }
 
+
 /*  04  - Page Header
 ----------------------------------------------*/
+
 .page-header {
     background-image: url(../../images/background/page-header-bg.jpg);
     background-size: cover;
@@ -1702,8 +1722,10 @@ header .main-menu .menu_cart .check_out {
     color: #fff;
 }
 
+
 /*  05  - Facility
 ----------------------------------------------*/
+
 .facility .facility-item {
     text-align: center;
 }
@@ -1882,8 +1904,10 @@ header .main-menu .menu_cart .check_out {
     background-position: center;
 }
 
+
 /*  06  - About
 ----------------------------------------------*/
+
 .about {
     position: relative;
     background-image: url(../../images/background/about-bg.jpg);
@@ -1951,8 +1975,10 @@ header .main-menu .menu_cart .check_out {
     color: #707070;
 }
 
+
 /*  07  - Classes
 ----------------------------------------------*/
+
 .classes .class-item {
     margin-bottom: 30px;
     transition: .25s;
@@ -2176,8 +2202,10 @@ header .main-menu .menu_cart .check_out {
     margin-top: 30px;
 }
 
+
 /*  08  - teachers
 ----------------------------------------------*/
+
 .teachers {
     position: relative;
     background-image: url(../../images/background/teacher-bg.jpg);
@@ -2246,7 +2274,6 @@ header .main-menu .menu_cart .check_out {
     color: #fff;
     margin-bottom: 10px;
 }
-
 
 .teachers .teacher-item .teacher-content a {
     color: #fff;
@@ -2384,8 +2411,10 @@ header .main-menu .menu_cart .check_out {
     background-color: #fa6f57;
 }
 
+
 /*  09  - teachers Details
 ----------------------------------------------*/
+
 .teacher-details .teacher-image img {
     width: 100%;
 }
@@ -2567,8 +2596,10 @@ header .main-menu .menu_cart .check_out {
     color: #92278f;
 }
 
+
 /*  10  - Features
 ----------------------------------------------*/
+
 .features .feature-image img {
     width: 100%;
 }
@@ -2663,8 +2694,10 @@ header .main-menu .menu_cart .check_out {
     margin: 0px;
 }
 
+
 /*  11  - Gallery
 ----------------------------------------------*/
+
 .gallery {
     text-align: center;
 }
@@ -2858,8 +2891,10 @@ header .main-menu .menu_cart .check_out {
     position: relative;
 }
 
+
 /*  12  - Achievements
 ----------------------------------------------*/
+
 .achievements {
     background-image: url(../../images/background/achievements-bg.jpg);
     background-size: cover;
@@ -2897,8 +2932,10 @@ header .main-menu .menu_cart .check_out {
     margin: 0px;
 }
 
+
 /*  13  - Testimonial
 ----------------------------------------------*/
+
 .testimonial .testimonial-item {
     position: relative;
 }
@@ -3031,7 +3068,6 @@ header .main-menu .menu_cart .check_out {
     overflow: hidden;
     -webkit-transform: translateX(70px);
     transform: translateX(70px);
-
 }
 
 .testimonial .testimonial-item:nth-child(2) .testimonial-image {
@@ -3108,8 +3144,10 @@ header .main-menu .menu_cart .check_out {
     display: none;
 }
 
+
 /*  14  - Partner
 ----------------------------------------------*/
+
 .partner {
     background-image: url(../../images/background/partner-bg.jpg);
     background-size: cover;
@@ -3128,8 +3166,10 @@ header .main-menu .menu_cart .check_out {
     background: #fff;
 }
 
+
 /*  15  - Event
 ----------------------------------------------*/
+
 .event {
     overflow: hidden;
 }
@@ -3454,7 +3494,6 @@ header .main-menu .menu_cart .check_out {
     background-color: #e56e00;
 }
 
-
 .event-single .post-image {
     position: relative;
 }
@@ -3549,8 +3588,10 @@ ul#countdown {
     width: 100%;
 }
 
+
 /*  16  - Blog
 ----------------------------------------------*/
+
 .blog {
     background-image: url(../../images/background/blog-bg.jpg);
     background-size: cover;
@@ -4411,8 +4452,10 @@ ul#countdown {
     color: #92278f;
 }
 
+
 /*  17  - Congact
 ----------------------------------------------*/
+
 .contact .contact-map {
     height: 600px;
     width: 100%;
@@ -4523,8 +4566,10 @@ ul#countdown {
     background-color: #7e007b;
 }
 
+
 /*  18  - Product
 ----------------------------------------------*/
+
 .product .product-header {
     border: 1px solid #f0f0f0;
     overflow: hidden;
@@ -5629,8 +5674,10 @@ ul#countdown {
     color: #fcb614;
 }
 
+
 /*  19  - Subscribe
 ----------------------------------------------*/
+
 .subscribe {
     background-color: #92278f;
     padding: 55px 0px;
@@ -5709,8 +5756,10 @@ ul#countdown {
     display: none;
 }
 
+
 /*  20  - 404 Error
 ----------------------------------------------*/
+
 .error-page {
     text-align: center;
 }
@@ -5764,8 +5813,10 @@ ul#countdown {
     font-size: 18px;
 }
 
+
 /*  21  - Footer
 ----------------------------------------------*/
+
 footer .footer-top {
     padding-top: 100px;
     padding-bottom: 60px;
@@ -5947,8 +5998,10 @@ footer .footer-bottom .social-default {
     float: right;
 }
 
+
 /*  17  - Pre-loader
 ----------------------------------------------*/
+
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -6011,7 +6064,6 @@ footer .footer-bottom .social-default {
     0% {
         -webkit-transform: rotate(0deg);
     }
-
     100% {
         -webkit-transform: rotate(360deg);
     }
@@ -6022,7 +6074,6 @@ footer .footer-bottom .social-default {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
@@ -6033,7 +6084,6 @@ footer .footer-bottom .social-default {
     0% {
         -webkit-transform: rotate(0deg);
     }
-
     100% {
         -webkit-transform: rotate(-360deg);
     }
@@ -6044,7 +6094,6 @@ footer .footer-bottom .social-default {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-
     100% {
         -webkit-transform: rotate(-360deg);
         transform: rotate(-360deg);
@@ -6068,7 +6117,9 @@ footer .footer-bottom .social-default {
     right: 0;
 }
 
+
 /* Loaded styles */
+
 .loaded #loader-wrapper .loader-section.section-left {
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
@@ -6115,28 +6166,15 @@ footer .footer-bottom .social-default {
 }
 
 
-
-
-
-
-
 /*==================customize mobile menu================== */
-
-
 
 .mobile-menu-area {
     display: none;
 }
 
-
-
 div#bs-example-navbar-collapse-1 {
     display: none;
 }
-
-
-
-
 
 .mobile-menu-area {
     position: fixed;
@@ -6213,7 +6251,6 @@ div#bs-example-navbar-collapse-1 {
     text-decoration: none;
 }
 
-
 .mobile-menu>ul>li .mobile-submenu {
     display: none;
 }
@@ -6227,7 +6264,6 @@ div#bs-example-navbar-collapse-1 {
 .mobile-menu>ul>li .mobile-submenu li a:focus {
     text-decoration: none;
 }
-
 
 .mobile-menu>ul>li .mobile-submenu .mobile-submenu li a {
     font-size: 15px;
@@ -6290,21 +6326,7 @@ div#bs-example-navbar-collapse-1 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
-
-
-
 
 nav.main-menu-area {
     display: flex;
@@ -6385,6 +6407,7 @@ span.caret {
     display: none;
 }
 
+
 /* home page 2 */
 
 header.header-two ul.menu {
@@ -6395,11 +6418,9 @@ header.header-two ul.menu {
     header.header-two ul.menu-search-cart {
         width: 320px;
     }
-
     header.header-two ul.menu {
         width: calc(100% - 320px);
     }
-
     .testimonial .testimonial-slider.swiper-container.swiper-container-horizontal.swiper-container-rtl .testimonial-image {
         -webkit-transform: translateX(-210px) translatey(-8px);
         transform: translateX(-210px) translatey(-8px);
@@ -6408,11 +6429,14 @@ header.header-two ul.menu {
 
 
 /*  */
+
 .header-four ul.menu {
     padding-right: 0;
 }
 
+
 /* cart page */
+
 .visible-lg,
 .visible-md,
 .visible-sm,
@@ -6508,7 +6532,6 @@ header.header-two ul.menu {
     margin-right: 5px;
 }
 
-
 .shop-menu {
     margin: 0;
 }
@@ -6530,8 +6553,7 @@ header.header-two ul.menu {
 .shop-menu li a {
     display: block;
     font-weight: 700;
-    font-family: 'Bubblegum Sans',
-        cursive;
+    font-family: 'Bubblegum Sans', cursive;
 }
 
 .shop-menu li a:hover {
